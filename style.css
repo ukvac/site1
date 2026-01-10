@@ -54,10 +54,12 @@ body{
 
 /* Phase banner */
 .phase-banner{
-  margin: 14px 0 10px;
+  margin: 14px 0 0;
+  padding-bottom: 10px;
   display:flex;
   align-items:center;
   gap:10px;
+  border-bottom: 1px solid #b1b4b6; /* GOV.UK grey divider */
 }
 .phase-banner__tag{
   background:#1d70b8;
@@ -261,4 +263,5 @@ a:focus{
   font-size: 14px;
   max-width: 800px;
 }
+
 
