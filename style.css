@@ -140,14 +140,14 @@ a{
 
 /* Back */
 .back-link-wrap{
-  margin:10px 0 18px;
+  margin:10px 0 20px;
 }
 
 .back-link{
   display:inline-block;
   color:var(--gov-blue);
   text-decoration:underline;
-  font-size:16px;
+  font-size:18px;
   position:relative;
   padding-left:14px;
 }
@@ -157,7 +157,7 @@ a{
   font-size:8px;
   position:absolute;
   left:0;
-  top:4px;
+  top:6px;
   color:var(--gov-blue);
 }
 
@@ -168,14 +168,14 @@ a{
 }
 
 h1{
-  margin:0 0 30px;
+  margin:0 0 32px;
   font-size:64px;
   line-height:1;
   font-weight:700;
 }
 
 .section-heading{
-  margin:0 0 18px;
+  margin:0 0 20px;
   font-size:22px;
   font-weight:700;
   line-height:1.2;
@@ -188,12 +188,12 @@ h1{
 
 .summary__row{
   display:flex;
-  gap:18px;
+  gap:14px;
   padding:10px 0;
 }
 
 .summary__key{
-  min-width:170px;
+  min-width:182px;
   font-size:19px;
   font-weight:700;
   line-height:1.35;
@@ -203,6 +203,7 @@ h1{
   flex:1;
   font-size:19px;
   line-height:1.45;
+  font-weight:400;
 }
 
 .summary__divider{
@@ -223,11 +224,11 @@ h1{
 }
 
 .warning__icon{
-  width:38px;
-  height:38px;
-  min-width:38px;
-  min-height:38px;
-  border-radius:999px;
+  width:40px;
+  height:40px;
+  min-width:40px;
+  min-height:40px;
+  border-radius:50%;
   background:var(--gov-black);
   color:#fff;
   display:flex;
@@ -240,7 +241,7 @@ h1{
 }
 
 .warning__title{
-  margin:0 0 6px;
+  margin:0 0 8px;
   font-size:22px;
   line-height:1.2;
   font-weight:700;
