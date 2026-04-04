@@ -8,111 +8,125 @@
 </head>
 <body>
 
-<header class="app-header">
-  <div class="container app-header__inner">
-    <div class="app-header__brand">GOV.UK</div>
-    <div class="app-header__service">Visas and Immigration</div>
-    <div class="app-header__meta">Applicant: <strong>Kim Huat Lim</strong></div>
-  </div>
-</header>
-
-<main class="page-shell">
-  <div class="container">
-
-    <div class="phase-banner">
-      <span class="phase-banner__tag">BETA</span>
-      <span class="phase-banner__text">This is a new service.</span>
+  <header class="app-header" role="banner">
+    <div class="container app-header__inner">
+      <div class="app-header__brand">GOV.UK</div>
+      <div class="app-header__service">Visas and Immigration</div>
+      <div class="app-header__meta">hatun Naheo</div>
     </div>
+  </header>
 
-    <nav class="step-nav">
-      <a class="step-nav__item">1. Start</a>
-      <a class="step-nav__item">2. Application</a>
-      <a class="step-nav__item">3. Finance</a>
-      <a class="step-nav__item">4. Documents</a>
-      <a class="step-nav__item">5. Declaration</a>
-      <span class="step-nav__item step-nav__item--active">6. Pay</span>
-      <a class="step-nav__item">7. Further actions</a>
-    </nav>
+  <main class="page-shell" role="main">
+    <div class="container">
 
-    <a class="back-link" href="#">Back</a>
-
-    <section class="content">
-      <h1>Your payment</h1>
-
-      <h2 class="section-heading">You are paying</h2>
-
-      <div class="summary">
-        <div class="summary__row">
-          <div class="summary__key">
-            <span class="summary__amount">479.00</span>
-            <span class="summary__currency">GBP</span>
-          </div>
-          <div class="summary__value">
-            Kim Huat B Lim Private Life Route Additional Fee. Late Submission Fee. Past Due Date.
-          </div>
-        </div>
-
-        <div class="summary__divider"></div>
-
-        <div class="summary__row summary__row--total">
-          <div class="summary__key">479.00 GBP in total</div>
-          <div class="summary__value"></div>
-        </div>
+      <div class="phase-banner" aria-label="Service status">
+        <strong class="phase-banner__tag">BETA</strong>
+        <span class="phase-banner__text">This is a new service.</span>
       </div>
 
-      <div class="warning">
-        <div class="warning__icon">!</div>
-        <div class="warning__content">
-          <h3 class="warning__title">Before you continue</h3>
-          <p class="warning__text">
-            You should only move to the next page if you have checked your answers and you are ready to submit your application.
-          </p>
-          <p class="warning__text">
-            Once you select ‘Continue to WorldPay’ you will not be able to return and edit your application.
-          </p>
-        </div>
-      </div>
+      <nav class="step-nav" aria-label="Progress">
+        <a class="step-nav__item" href="#">1. Start</a>
+        <a class="step-nav__item" href="#">2. Application</a>
+        <a class="step-nav__item" href="#">3. Documents</a>
+        <a class="step-nav__item" href="#">4. Declaration</a>
+        <span class="step-nav__item step-nav__item--active" aria-current="page">5. Pay</span>
+        <a class="step-nav__item" href="#">6. Further actions</a>
+      </nav>
 
-      <p class="body-copy">
-        Continue to the payment provider to make a secure payment. You will be able to download a copy of your application after payment has been taken.
+      <p class="back-link-wrap">
+        <a class="back-link" href="#" onclick="history.back(); return false;">Back</a>
       </p>
 
-      <div class="actions">
-        <a class="button">Continue to WorldPay</a>
-      </div>
+      <section class="content-area">
+        <h1>Your payment</h1>
 
-      <div class="links">
-        <a href="#">Return to this application later</a>
-        <a href="#">Show and edit answers</a>
-      </div>
-    </section>
+        <h2 class="section-heading">You are paying</h2>
 
-  </div>
-</main>
+        <div class="summary">
+          <div class="summary__row">
+            <div class="summary__key">1735.00 GBP</div>
+            <div class="summary__value">- Mr hatun Naheo's application for naturalisation</div>
+          </div>
 
-<div class="footer-bar"></div>
+          <div class="summary__divider"></div>
 
-<footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__left">
-      <div class="footer-links">
-        <a href="#">Cookies</a>
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Accessibility Statement</a>
-        <a href="#">Contact Us</a>
-      </div>
+          <div class="summary__row summary__row--total">
+            <div class="summary__key">1735.00 GBP in total</div>
+            <div class="summary__value"></div>
+          </div>
 
-      <p class="footer-text">
-        All content is available under the <a href="#">Open Government Licence v3.0</a>, except where otherwise stated
-      </p>
+          <div class="summary__divider"></div>
+        </div>
+
+        <div class="warning" role="note" aria-label="Before you continue">
+          <div class="warning__icon" aria-hidden="true">!</div>
+          <div class="warning__content">
+            <h2 class="warning__title">Before you continue</h2>
+            <p class="warning__text warning__text--strong">
+              You should only move to the next page if you have checked your answers and you are ready to submit your application.
+            </p>
+            <p class="warning__text warning__text--strong">
+              Once you select ‘Continue to WorldPay’ you will not be able to return and edit your application.
+            </p>
+          </div>
+        </div>
+
+        <p class="body-text">
+          Continue to WorldPay to make a secure payment. You will be able to download a copy of your application form after payment has been taken.
+        </p>
+
+        <div class="actions">
+          <a
+            class="button"
+            href="https://google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Continue to WorldPay
+          </a>
+        </div>
+
+        <div class="link-list">
+          <a href="#">Return to this application later</a>
+          <a href="#">Show and edit answers</a>
+        </div>
+      </section>
+
     </div>
+  </main>
 
-    <div class="footer__right">
-      <a href="#">© Crown copyright</a>
+  <div class="footer-top-bar"></div>
+
+  <footer class="app-footer" role="contentinfo">
+    <div class="container app-footer__inner">
+      <div class="app-footer__crest-row">
+        <div class="app-footer__small-crown">♛</div>
+      </div>
+
+      <div class="app-footer__bottom">
+        <div class="app-footer__left">
+          <div class="app-footer__links">
+            <a href="#">Cookies</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+          <p class="app-footer__note">
+            <strong>OGL</strong>
+            &nbsp; All content is available under the
+            <a href="#">Open Government Licence v3.0</a>, except where otherwise stated
+          </p>
+        </div>
+
+        <div class="app-footer__right">
+          <div class="app-footer__large-crest">⚜</div>
+          <a href="#">© Crown copyright</a>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
