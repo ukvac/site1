@@ -21,7 +21,7 @@ body{
 }
 
 body{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background:var(--gov-light);
   color:var(--gov-black);
   line-height:1.45;
@@ -147,7 +147,7 @@ a{
   display:inline-block;
   color:var(--gov-blue);
   text-decoration:underline;
-  font-size:18px;
+  font-size:16px;
   position:relative;
   padding-left:14px;
 }
@@ -157,7 +157,7 @@ a{
   font-size:8px;
   position:absolute;
   left:0;
-  top:6px;
+  top:5px;
   color:var(--gov-blue);
 }
 
@@ -169,7 +169,7 @@ a{
 
 h1{
   margin:0 0 30px;
-  font-size:62px;
+  font-size:56px;
   line-height:1;
   font-weight:700;
 }
@@ -234,7 +234,7 @@ h1{
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:24px;
+  font-size:23px;
   font-weight:700;
   line-height:1;
   margin-top:1px;
