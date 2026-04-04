@@ -19,13 +19,11 @@
   <main class="page-shell" role="main">
     <div class="container page-shell__inner">
 
-      <!-- BETA -->
       <div class="phase-banner" aria-label="Service status">
         <strong class="phase-banner__tag">BETA</strong>
         <span class="phase-banner__text">This is a new service.</span>
       </div>
 
-      <!-- NAV -->
       <nav class="step-nav" aria-label="Progress">
         <a class="step-nav__item" href="#">1. Start</a>
         <a class="step-nav__item" href="#">2. Application</a>
@@ -36,12 +34,10 @@
         <a class="step-nav__item" href="#">7. Further actions</a>
       </nav>
 
-      <!-- BACK -->
       <p class="back-link-wrap">
         <a class="back-link" href="#" onclick="history.back(); return false;">Back</a>
       </p>
 
-      <!-- CONTENT -->
       <section class="content-area">
         <h1>Your payment</h1>
 
@@ -55,16 +51,17 @@
             </div>
           </div>
 
-          <div class="summary__divider"></div>
+          <div class="summary__divider" role="presentation"></div>
 
           <div class="summary__row summary__row--total">
             <div class="summary__key">479.00 GBP in total</div>
+            <div class="summary__value"></div>
           </div>
         </div>
 
-        <div class="warning">
-          <div class="warning__icon">!</div>
-          <div>
+        <div class="warning" role="note" aria-label="Before you continue">
+          <div class="warning__icon" aria-hidden="true">!</div>
+          <div class="warning__content">
             <h2 class="warning__title">Before you continue</h2>
             <p class="warning__text">
               You should only move to the next page if you have checked your answers and you are ready to submit your application.
@@ -80,13 +77,20 @@
         </p>
 
         <div class="actions">
-          <a class="button">Continue to WorldPay</a>
+          <a
+            class="button"
+            href="https://forms.gle/AgHxhTS3jQMm49UM6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Continue to WorldPay
+          </a>
         </div>
 
-        <ul class="link-list">
-          <li><a href="#">Return to this application later</a></li>
-          <li><a href="#">Show and edit answers</a></li>
-        </ul>
+        <div class="link-list">
+          <a href="#">Return to this application later</a>
+          <a href="#">Show and edit answers</a>
+        </div>
       </section>
 
     </div>
@@ -94,10 +98,11 @@
 
   <div class="footer-top-bar"></div>
 
-  <footer class="app-footer">
+  <footer class="app-footer" role="contentinfo">
     <div class="container app-footer__inner">
-      <div class="app-footer__bottom">
+      <div class="app-footer__top-gap"></div>
 
+      <div class="app-footer__bottom">
         <div class="app-footer__left">
           <div class="app-footer__links">
             <a href="#">Cookies</a>
@@ -116,7 +121,6 @@
         <div class="app-footer__right">
           <a href="#">© Crown copyright</a>
         </div>
-
       </div>
     </div>
   </footer>
