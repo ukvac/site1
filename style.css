@@ -6,7 +6,7 @@
   --gov-grey:#505a5f;
   --gov-border:#b1b4b6;
   --gov-light:#f3f2f1;
-  --gov-nav-bg:#eef4f9;
+  --gov-nav-bg:#e8eff5;
   --focus:#ffdd00;
   --container: 960px;
 }
@@ -43,25 +43,25 @@ body{
   display:grid;
   grid-template-columns:auto 1fr auto;
   align-items:center;
-  min-height:60px;
+  min-height:61px;
 }
 
 .app-header__brand{
   font-weight:700;
-  font-size:22px;
+  font-size:23px;
   line-height:1;
 }
 
 .app-header__service{
   text-align:center;
   font-weight:700;
-  font-size:20px;
+  font-size:21px;
   line-height:1.2;
 }
 
 .app-header__meta{
   text-align:right;
-  font-size:14px;
+  font-size:13px;
   line-height:1.2;
   white-space:nowrap;
 }
@@ -103,16 +103,16 @@ body{
   background:var(--gov-nav-bg);
   border-top:1px solid #9fc2e2;
   border-bottom:1px solid #9fc2e2;
-  padding:12px 0 0;
-  margin-bottom:12px;
+  padding:14px 0 0;
+  margin-bottom:14px;
 }
 
 .step-nav__item{
   color:var(--gov-blue);
   text-decoration:none;
-  font-size:16px;
+  font-size:17px;
   line-height:1.2;
-  padding:0 0 14px;
+  padding:0 0 15px;
 }
 
 .step-nav__item:hover{
@@ -152,46 +152,46 @@ body{
 
 /* Content */
 .content-area{
-  max-width:790px;
-  padding:0 0 42px;
+  max-width:760px;
+  padding:0 0 56px;
   background:transparent;
 }
 
 h1{
   margin:0 0 18px;
-  font-size:54px;
-  line-height:1.05;
+  font-size:62px;
+  line-height:1;
   font-weight:700;
 }
 
 .section-heading{
-  margin:0 0 14px;
-  font-size:21px;
+  margin:0 0 16px;
+  font-size:22px;
   line-height:1.2;
   font-weight:700;
 }
 
 .summary{
   max-width:760px;
-  margin-bottom:34px;
+  margin-bottom:38px;
 }
 
 .summary__row{
   display:flex;
-  gap:28px;
+  gap:34px;
   padding:10px 0;
 }
 
 .summary__key{
-  min-width:160px;
+  min-width:155px;
   font-weight:700;
-  font-size:18px;
+  font-size:19px;
   line-height:1.4;
 }
 
 .summary__value{
   flex:1;
-  font-size:18px;
+  font-size:19px;
   line-height:1.45;
 }
 
@@ -209,7 +209,7 @@ h1{
   display:flex;
   gap:16px;
   max-width:760px;
-  margin:30px 0 24px;
+  margin:34px 0 26px;
 }
 
 .warning__icon{
@@ -235,21 +235,21 @@ h1{
 }
 
 .warning__text{
-  margin:0 0 10px;
+  margin:0 0 12px;
   font-size:16px;
   line-height:1.45;
 }
 
 .body-text{
   max-width:760px;
-  margin:0 0 18px;
+  margin:0 0 20px;
   font-size:16px;
   line-height:1.45;
 }
 
 /* Button */
 .actions{
-  margin:0 0 10px;
+  margin:0 0 14px;
 }
 
 .button{
@@ -291,19 +291,15 @@ a:hover{
 
 /* Footer top bar */
 .footer-top-bar{
-  height:8px;
+  height:7px;
   background:var(--gov-blue);
 }
 
 /* Footer */
 .app-footer{
   background:#dfe4e8;
-  min-height:290px;
-  padding:46px 0 60px;
-}
-
-.app-footer__top-space{
-  height:70px;
+  min-height:320px;
+  padding:118px 0 70px;
 }
 
 .app-footer__bottom{
@@ -321,7 +317,7 @@ a:hover{
   display:flex;
   flex-wrap:wrap;
   gap:18px;
-  margin-bottom:22px;
+  margin-bottom:24px;
 }
 
 .app-footer__links a,
@@ -329,7 +325,7 @@ a:hover{
 .app-footer__note,
 .app-footer__note a{
   font-size:16px;
-  line-height:1.4;
+  line-height:1.45;
   color:var(--gov-black);
 }
 
@@ -339,9 +335,9 @@ a:hover{
 }
 
 .app-footer__right{
-  min-width:180px;
-  text-align:center;
-  padding-top:8px;
+  min-width:190px;
+  text-align:left;
+  padding-top:4px;
 }
 
 /* Responsive */
