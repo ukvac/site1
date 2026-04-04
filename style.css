@@ -31,6 +31,11 @@ a{
   text-underline-offset:2px;
 }
 
+img{
+  max-width:100%;
+  display:block;
+}
+
 .container{
   max-width:var(--container);
   margin:0 auto;
@@ -45,15 +50,19 @@ a{
 
 .app-header__inner{
   display:grid;
-  grid-template-columns:220px 1fr 220px;
+  grid-template-columns:260px 1fr 220px;
   align-items:center;
   min-height:58px;
 }
 
-.app-header__brand{
-  font-size:22px;
-  font-weight:700;
-  line-height:1;
+.app-header__brand-wrap{
+  display:flex;
+  align-items:center;
+}
+
+.app-header__brand-image{
+  height:28px;
+  width:auto;
 }
 
 .app-header__service{
@@ -328,10 +337,8 @@ h1{
 }
 
 .app-footer__small-crown{
-  font-size:34px;
-  color:#0b0c0c;
-  line-height:1;
-  width:34px;
+  width:28px;
+  height:auto;
 }
 
 .app-footer__bottom{
@@ -378,10 +385,9 @@ h1{
 }
 
 .app-footer__large-crest{
-  font-size:70px;
-  line-height:1;
-  margin-bottom:8px;
-  color:#0b0c0c;
+  width:90px;
+  height:auto;
+  margin:0 auto 8px;
 }
 
 .app-footer__right a{
@@ -398,7 +404,7 @@ h1{
     padding:12px 0;
   }
 
-  .app-header__brand,
+  .app-header__brand-wrap,
   .app-header__service,
   .app-header__meta{
     text-align:left;
@@ -419,6 +425,10 @@ h1{
 
   .app-footer__right{
     text-align:left;
+  }
+
+  .app-footer__large-crest{
+    margin:0 0 8px;
   }
 
   h1{
