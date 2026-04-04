@@ -50,12 +50,11 @@ body{
 }
 
 .phase-banner__tag{
-  background:#d5e8f3;
-  color:#0b0c0c;
+  background:#1d70b8;
+  color:#fff;
   padding:3px 7px;
   font-weight:700;
   font-size:14px;
-  border:1px solid #b7d0e2;
 }
 
 .phase-banner__text{
@@ -87,7 +86,7 @@ body{
 /* BACK */
 .back-link{
   display:inline-block;
-  margin:14px 0 28px;
+  margin:14px 0 30px;
   color:#1d70b8;
   text-decoration:underline;
   font-size:16px;
@@ -95,8 +94,8 @@ body{
 
 .back-link::before{
   content:"◀";
-  font-size:9px;
-  margin-right:6px;
+  font-size:8px;
+  margin-right:4px;
   position:relative;
   top:-1px;
 }
@@ -110,7 +109,7 @@ body{
 h1{
   font-size:64px;
   line-height:1;
-  margin:0 0 26px;
+  margin:0 0 28px;
   font-weight:700;
 }
 
@@ -121,25 +120,30 @@ h1{
 }
 
 .summary{
-  margin-bottom:38px;
+  margin-bottom:42px;
 }
 
 .summary__row{
   display:flex;
-  gap:28px;
-  padding:9px 0;
+  gap:36px;
+  padding:10px 0;
 }
 
 .summary__key{
-  min-width:168px;
+  min-width:132px;
   font-size:19px;
   font-weight:700;
-  line-height:1.35;
+  line-height:1.25;
+}
+
+.summary__amount,
+.summary__currency{
+  display:block;
 }
 
 .summary__value{
   flex:1;
-  max-width:560px;
+  max-width:590px;
   font-size:19px;
   line-height:1.45;
 }
@@ -157,15 +161,15 @@ h1{
 .warning{
   display:flex;
   align-items:flex-start;
-  gap:16px;
-  margin:36px 0 28px;
+  gap:18px;
+  margin:38px 0 30px;
 }
 
 .warning__icon{
-  width:32px;
-  height:32px;
-  min-width:32px;
-  min-height:32px;
+  width:36px;
+  height:36px;
+  min-width:36px;
+  min-height:36px;
   border-radius:50%;
   background:#0b0c0c;
   color:#fff;
@@ -193,8 +197,8 @@ h1{
 }
 
 .body-copy{
-  max-width:690px;
-  margin:0 0 18px;
+  max-width:700px;
+  margin:0 0 20px;
   font-size:16px;
   line-height:1.45;
 }
@@ -240,6 +244,17 @@ h1{
   min-height:260px;
 }
 
+.footer__inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:40px;
+}
+
+.footer__left{
+  flex:1;
+}
+
 .footer-links{
   display:flex;
   gap:20px;
@@ -253,7 +268,7 @@ h1{
 }
 
 .footer-text{
-  margin:0 0 10px;
+  margin:0;
   color:#0b0c0c;
   font-size:16px;
 }
@@ -263,11 +278,13 @@ h1{
   text-decoration:underline;
 }
 
-.footer-right{
-  margin-top:10px;
+.footer__right{
+  min-width:180px;
+  text-align:right;
+  padding-top:2px;
 }
 
-.footer-right a{
+.footer__right a{
   color:#0b0c0c;
   text-decoration:underline;
 }
