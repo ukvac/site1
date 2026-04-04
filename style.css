@@ -192,7 +192,7 @@ h1{
 
 .summary{
   max-width:710px;
-  margin-bottom:34px;
+  margin-bottom:40px;
 }
 
 .summary__row{
@@ -217,7 +217,7 @@ h1{
 
 .summary__divider{
   height:1px;
-  background:#bfbfbf;
+  background:#d8d8d8;
 }
 
 .summary__row--total .summary__key{
@@ -229,7 +229,7 @@ h1{
   display:flex;
   align-items:flex-start;
   gap:18px;
-  margin:34px 0 34px;
+  margin:40px 0;
 }
 
 .warning__icon{
@@ -261,17 +261,21 @@ h1{
   max-width:650px;
   font-size:17px;
   line-height:1.35;
+  font-weight:400;
 }
 
 .warning__text--strong{
   font-weight:700;
+  letter-spacing:0.1px;
 }
 
 .body-text{
   max-width:700px;
-  margin:0 0 24px;
+  margin:0 0 30px;
   font-size:17px;
   line-height:1.4;
+  font-weight:400;
+  color:#0b0c0c;
 }
 
 /* Button */
@@ -337,8 +341,9 @@ h1{
 }
 
 .app-footer__small-crown{
-  width:28px;
+  width:36px;
   height:auto;
+  margin-top:10px;
 }
 
 .app-footer__bottom{
@@ -385,7 +390,7 @@ h1{
 }
 
 .app-footer__large-crest{
-  width:90px;
+  width:110px;
   height:auto;
   margin:0 auto 8px;
 }
