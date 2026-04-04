@@ -72,12 +72,16 @@ body{
   min-height:480px;
 }
 
+.page-shell .container{
+  padding-top:8px;
+}
+
 /* Phase banner */
 .phase-banner{
   display:flex;
   align-items:center;
   gap:10px;
-  padding:10px 0 10px;
+  padding:12px 0 6px;
 }
 
 .phase-banner__tag{
@@ -99,20 +103,20 @@ body{
 .step-nav{
   display:flex;
   flex-wrap:wrap;
-  gap:22px;
-  background:var(--gov-nav-bg);
-  border-top:1px solid #9fc2e2;
-  border-bottom:1px solid #9fc2e2;
-  padding:14px 0 0;
-  margin-bottom:14px;
+  gap:24px;
+  background:#e8eff5;
+  border-top:1px solid #b1c9dd;
+  border-bottom:2px solid #b1c9dd;
+  padding:12px 0 0;
+  margin-bottom:12px;
 }
 
 .step-nav__item{
   color:var(--gov-blue);
   text-decoration:none;
   font-size:17px;
-  line-height:1.2;
-  padding:0 0 15px;
+  line-height:1;
+  padding:0 0 12px;
 }
 
 .step-nav__item:hover{
@@ -128,7 +132,7 @@ body{
 
 /* Back link */
 .back-link-wrap{
-  margin:0 0 18px;
+  margin:8px 0 22px;
 }
 
 .back-link{
