@@ -3,119 +3,115 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pay – site payment</title>
+  <title>Your location</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="gov-header" role="banner">
-    <div class="gov-width-container gov-header__container">
-      <a href="#" class="gov-header__brand" aria-label="GOV.UK homepage">
-        <img src="assets/govuk-crest.svg" alt="" class="gov-header__crest" />
-        <span class="gov-header__logotype">GOV.UK</span>
-      </a>
+<header class="top-header">
+  <div class="wrap top-header__inner">
+
+    <div class="top-header__brand">
+      <!-- WHITE CROWN -->
+      <img class="top-header__crown"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAABeCAYAAAA+NAqcAAAB...">
+      <span class="top-header__text">GOV.UK</span>
     </div>
-  </header>
 
-  <div class="service-shell">
-    <div class="gov-width-container">
-      <div class="phase-banner" aria-label="Service status">
-        <strong class="phase-banner__tag">BETA</strong>
-        <span class="phase-banner__text">This is a new service.</span>
-      </div>
-
-      <nav class="service-nav" aria-label="Service navigation">
-        <div class="service-nav__title">Visas and Immigration</div>
-
-        <div class="service-nav__links">
-          <a class="service-nav__link service-nav__link--active" href="#" aria-current="page">1. Start</a>
-          <a class="service-nav__link" href="#">2. Application</a>
-          <a class="service-nav__link" href="#">3. Finance</a>
-          <a class="service-nav__link" href="#">4. Documents</a>
-          <a class="service-nav__link" href="#">5. Declaration</a>
-          <a class="service-nav__link" href="#">6. Pay</a>
-          <a class="service-nav__link" href="#">7. Further actions</a>
-        </div>
-      </nav>
+    <div class="top-header__service">
+      Visas and Immigration
     </div>
+
+    <div></div>
+
   </div>
+</header>
 
-  <main id="main-content" class="gov-width-container main-content" role="main">
-    <p class="back-link-wrap">
-      <a class="back-link" href="#" onclick="history.back(); return false;">Back</a>
-    </p>
+<section class="top-area">
+  <div class="wrap">
 
-    <h1 class="page-title">Your payment</h1>
+    <div class="phase-banner">
+      <span class="phase-banner__tag">BETA</span>
+      <span>This is a new service.</span>
+    </div>
 
-    <h2 class="section-heading">You are paying</h2>
+    <nav class="step-nav">
+      <a class="step-nav__item step-nav__item--active">1. Start</a>
+      <a class="step-nav__item">2. Application</a>
+      <a class="step-nav__item">3. Finance</a>
+      <a class="step-nav__item">4. Documents</a>
+      <a class="step-nav__item">5. Declaration</a>
+      <a class="step-nav__item">6. Pay</a>
+      <a class="step-nav__item">7. Further actions</a>
+    </nav>
 
-    <div class="summary" role="region" aria-label="Payment summary">
-      <div class="summary__row">
-        <div class="summary__key">529.00 GBP</div>
-        <div class="summary__value">
-          Roa'a Emad Ahmad Qa'Qa'A<br>
-          27 September 2001 – Applicant under special rule. You will not be able to proceed without payment.
+    <main class="main-content">
+      <h1>Your location</h1>
+
+      <fieldset class="question-group">
+        <legend class="question">Are you currently in the UK?</legend>
+
+        <label class="radio">
+          <input type="radio" name="uk" checked>
+          <span class="radio__mark"></span>
+          <span>Yes</span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="uk">
+          <span class="radio__mark"></span>
+          <span>No</span>
+        </label>
+      </fieldset>
+
+      <button class="gov-button">Save and continue</button>
+    </main>
+
+  </div>
+</section>
+
+<div class="footer-top-bar"></div>
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <!-- SMALL CROWN -->
+    <div class="site-footer__crown-row">
+      <img class="site-footer__small-crown"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAABeCAYAAAA+NAqcAAAB...">
+    </div>
+
+    <div class="site-footer__bottom">
+
+      <div class="site-footer__left">
+        <div class="site-footer__links">
+          <a>Cookies</a>
+          <a>Terms and Conditions</a>
+          <a>Privacy Policy</a>
+          <a>Accessibility Statement</a>
+          <a>Contact Us</a>
+        </div>
+
+        <div class="site-footer__licence">
+          <strong>OGL</strong>
+          <p>
+            All content is available under the
+            <a>Open Government Licence v3.0</a>, except where otherwise stated
+          </p>
         </div>
       </div>
 
-      <div class="summary__divider" role="presentation"></div>
-
-      <div class="summary__row summary__row--total">
-        <div class="summary__key">529.00 GBP in total</div>
-        <div class="summary__value"></div>
+      <div class="site-footer__right">
+        <!-- LARGE CREST -->
+        <img class="site-footer__crest"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANAAAADICAYAAADJ7fe0AAAB...">
+        <a>© Crown copyright</a>
       </div>
+
     </div>
 
-    <div class="warning" role="note" aria-label="Before you continue">
-      <div class="warning__icon" aria-hidden="true">!</div>
-      <div class="warning__content">
-        <h2 class="warning__title">Before you continue</h2>
-        <p class="warning__text">
-          You should only move to the next page if you have checked your answers and you are ready to submit your application.
-        </p>
-        <p class="warning__text">
-          Once you select ‘Continue to WorldPay’ you will not be able to return and edit your application.
-        </p>
-      </div>
-    </div>
+  </div>
+</footer>
 
-    <p class="body-text">
-      Continue to the payment provider to make a secure payment. You will be able to download a copy of your application after payment has been taken.
-    </p>
-
-    <div class="actions">
-      <a
-        class="button"
-        href="https://forms.gle/AgHxhTS3jQMm49UM6"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Continue to WorldPay
-      </a>
-    </div>
-
-    <ul class="link-list">
-      <li><a href="#">Return to this application later</a></li>
-      <li><a href="#">Show and edit answers</a></li>
-    </ul>
-  </main>
-
-  <footer class="gov-footer" role="contentinfo">
-    <div class="gov-width-container">
-      <div class="gov-footer__meta">
-        <div class="gov-footer__links">
-          <a href="#">Cookies</a>
-          <a href="#">Terms and conditions</a>
-          <a href="#">Privacy policy</a>
-          <a href="#">Accessibility statement</a>
-          <a href="#">Fee explanation</a>
-        </div>
-
-        <p class="gov-footer__note">© Crown copyright</p>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
