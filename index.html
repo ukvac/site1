@@ -21,7 +21,7 @@
 
     <div class="phase-banner">
       <span class="phase-banner__tag">BETA</span>
-      <span>This is a new service.</span>
+      <span class="phase-banner__text">This is a new service.</span>
     </div>
 
     <nav class="step-nav">
@@ -36,30 +36,40 @@
 
     <a class="back-link" href="#">Back</a>
 
-    <div class="content">
+    <section class="content">
       <h1>Your payment</h1>
 
-      <h2>You are paying</h2>
+      <h2 class="section-heading">You are paying</h2>
 
       <div class="summary">
-        <div class="row">
-          <strong class="summary__key">479.00 GBP</strong>
-          <span class="summary__value">Kim Huat B Lim Private Life Route Additional Fee. Late Submission Fee. Past Due Date.</span>
+        <div class="summary__row">
+          <div class="summary__key">
+            <span class="summary__amount">479.00</span>
+            <span class="summary__currency">GBP</span>
+          </div>
+          <div class="summary__value">
+            Kim Huat B Lim Private Life Route Additional Fee. Late Submission Fee. Past Due Date.
+          </div>
         </div>
 
-        <hr>
+        <div class="summary__divider"></div>
 
-        <div class="row">
-          <strong class="summary__key">479.00 GBP in total</strong>
+        <div class="summary__row summary__row--total">
+          <div class="summary__key">479.00 GBP in total</div>
+          <div class="summary__value"></div>
         </div>
       </div>
 
       <div class="warning">
-        <div class="icon">!</div>
-        <div>
-          <h3>Before you continue</h3>
-          <p>You should only move to the next page if you have checked your answers and you are ready to submit your application.</p>
-          <p>Once you select ‘Continue to WorldPay’ you will not be able to return and edit your application.</p>
+        <div class="warning__icon">!</div>
+        <div class="warning__content">
+          <h3 class="warning__title">Before you continue</h3>
+          <p class="warning__text">
+            You should only move to the next page if you have checked your answers and you are ready to submit your application.
+          </p>
+          <p class="warning__text">
+            Once you select ‘Continue to WorldPay’ you will not be able to return and edit your application.
+          </p>
         </div>
       </div>
 
@@ -67,13 +77,15 @@
         Continue to the payment provider to make a secure payment. You will be able to download a copy of your application after payment has been taken.
       </p>
 
-      <a class="button">Continue to WorldPay</a>
+      <div class="actions">
+        <a class="button">Continue to WorldPay</a>
+      </div>
 
       <div class="links">
         <a href="#">Return to this application later</a>
         <a href="#">Show and edit answers</a>
       </div>
-    </div>
+    </section>
 
   </div>
 </main>
@@ -81,20 +93,22 @@
 <div class="footer-bar"></div>
 
 <footer class="footer">
-  <div class="container">
-    <div class="footer-links">
-      <a href="#">Cookies</a>
-      <a href="#">Terms and Conditions</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Accessibility Statement</a>
-      <a href="#">Contact Us</a>
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <div class="footer-links">
+        <a href="#">Cookies</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Accessibility Statement</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <p class="footer-text">
+        All content is available under the <a href="#">Open Government Licence v3.0</a>, except where otherwise stated
+      </p>
     </div>
 
-    <p class="footer-text">
-      All content is available under the <a href="#">Open Government Licence v3.0</a>, except where otherwise stated
-    </p>
-
-    <div class="footer-right">
+    <div class="footer__right">
       <a href="#">© Crown copyright</a>
     </div>
   </div>
